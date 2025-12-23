@@ -1,11 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
-import { User, JournalEntry, AuthState } from './types.ts';
-import { storageService, supabase } from './services/storageService.ts';
-import { Navbar } from './components/Navbar.tsx';
-import { LandingPage } from './pages/LandingPage.tsx';
-import { Dashboard } from './pages/Dashboard.tsx';
-import { EditorPage } from './pages/EditorPage.tsx';
+import { User, JournalEntry, AuthState } from './types';
+import { storageService, supabase } from './services/storageService';
+import { Navbar } from './components/Navbar';
+import { LandingPage } from './pages/LandingPage';
+import { Dashboard } from './pages/Dashboard';
+import { EditorPage } from './pages/EditorPage';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<'landing' | 'dashboard' | 'new' | 'edit'>('landing');
